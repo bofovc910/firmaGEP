@@ -1,0 +1,532 @@
+@import url(puebla.css);
+@import url(tramitesgob.css);
+:root{
+/*rojo 1*/
+--rojoFondo:#A8123E;
+--grisFondo:#f1f1f1;
+--amarillofondo:#fffded;
+--grisFondoFooter:#5f1b2d;
+--rojoTxt:#C62038;
+}
+
+
+ #header-container {
+width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    margin: 0;
+    background-size: cover; 
+    transition: background-size 0.5s ease; /* Suaviza el cambio del tamaÃ±o del fondo */
+  }
+
+  #header {transition:  0.5s ease; /* Suaviza el cambio del tamaÃ±o de la fuente */}
+
+#header-inner {
+
+    transition: 0.5s ease; /* Suaviza el cambio del tamaÃ±o de la fuente */
+  }
+
+#header-img {
+
+    transition: 0.5s ease; /* Suaviza el cambio del tamaÃ±o de la fuente */
+  }
+
+#header-menu {
+
+    transition: 0.5s ease; /* Suaviza el cambio del tamaÃ±o de la fuente */
+  }
+
+#redes-menu{
+	transition:  0.5s ease; /* Suaviza el cambio del tamaÃ±o de la fuente */
+}
+
+body 
+{
+max-width: 100%;
+margin: 0 auto;
+padding: 0;
+font-family: "Poppins", serif;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+max-width: 100%; /* Asegúrate de usar todo el espacio horizontal */
+overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+}
+
+.offscreen{clip-path: inset(100%); clip: rect(1px 1px 1px 1px); /* IE 6/7 */  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px; overflow: hidden; position: absolute; white-space: nowrap; /* added line */ width: 1px; }
+
+.uk-card-primary.uk-card-body, .uk-card-primary > :not([class*="uk-card-media"]), .uk-card-secondary.uk-card-body, .uk-card-secondary > :not([class*="uk-card-media"]), .uk-light, .uk-offcanvas-bar, .uk-overlay-primary, .uk-section-primary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) {
+  color: rgba(255,255,255);
+}
+
+.body h2, .uk-h2{font:500 42px 'Corra Montserra'}
+.body h3, .uk-h3{font:600 27px 'Corra Montserra'}
+.body h4, .uk-h4{font:600 25px 'Corra Montserra'}
+.body h5, .uk-h5{font:600 23px 'Corra Montserra'}
+
+/* TamaÃ±o fuente*/
+.fs-12{font-size: 12px !important;}
+.fs-14{font-size: 14px !important;}
+.fs-15{font-size: 15px !important;}
+.fs-16{font-size: 16px !important;}
+.fs-18{font-size: 18px !important;}
+.fs-23{font-size: 23px !important;}
+.fs-25{font-size: 25px !important;}
+.fs-26{font-size: 26px !important;}
+.fs-27{font-size: 27px !important;}
+.fs-35{font-size: 35px !important;}
+.fs-42{font-size: 42px !important;}
+/* Grosor fuente*/
+.fw-300, .fw-light{font-weight: 300 !important;}
+.fw-400, .fw-regular{font-weight: 400 !important;}
+.fw-500, .fw-medium{font-weight: 500 !important;}
+.fw-600, .fw-semibold{font-weight: 600 !important;}
+.fw-700, .fw-bold{font-weight: 700 !important;}
+
+body{font:400 16px 'Corra Montserra'; color:#ffffff}
+
+.clr{width:100%; clear:both;}
+.centered-txt{text-align:center}
+.right-txt{text-align: right;}
+.fixed-width-container{width:1300px; margin:0 auto;}
+.principal-top-container{max-width:1400px; width:100%; margin:0 auto;}
+.principal-middle-container{background: #c19e74;}
+.principal-bottom-container{background:var(--grisFondo);}
+.principal-bottom-custom-title h2{padding:40px 0 10px 0; text-align: center; color:#5D666A}
+.principal-bottom-border-container{background:var(--grisFondo); padding:0 30px;}
+.principal-bottom-border-container > div{ border-bottom: 20px solid #BBB;}
+.titulo-tramites-mas-buscados{color:var(--rojoTxt) !important; font:600 27px 'Corra Montserra'; text-align: center;}
+.medio-container{/*padding:40px 0 0 0*/}
+.central-bottom-container{padding:40px 0 0 0}
+.central-top-container{/*padding:60px 0 40px 0;*/ background: var(--amarillofondo);}
+.central-top-container h2, .central-bottom h2, .inferior-bottom h2, .medio h2, .joomla-content h2{color:#b2b2b1; text-align: center; margin-bottom: 50px; font: 399 20pt 'Corra Montserra';}
+/*.central-top{margin:0 0 100px 0}*/
+.central-bottom-container{padding:60px 0 40px 0;}
+.inferior-top-container{padding:80px 0; background:url(https://www.puebla.gob.mx//images/fondo-dorado.jpg)}
+.inferior-bottom-container{padding:60px 0; }
+.separador-rojo{background-color: var(--rojoFondo);  height:78px;}
+
+/*Chatbot*/
+.chatbot{
+  z-index: 100;
+  width: 0;
+  height: 0;
+}
+
+
+
+/*Redes, menu, buscador*/
+.header{
+  /* var(--rojoFondo)*/
+  /*height:224px; Se cambia para que coincida con el tamaÃ±o de la imagen 2024, se comenta para que la imagen se presente bien, descomentar si es necesario*/ 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+ }
+.left-header{
+margin: 0; /* Elimina márgenes innecesarios */
+width: 100%; /* Confirma que ocupan solo el espacio necesario */
+height: auto; /* Ajusta la altura automáticamente */
+background-size: cover; /* Cubre el área sin dejar espacios */
+	
+/*background: #f0eeeb url(../images/header-complemento.jpg) no-repeat right;*/
+background: #f0efec url(https://www.puebla.gob.mx/images/pix_dere.jpg) repeat;	
+}
+.right-header{
+    margin: 0; /* Elimina márgenes innecesarios */
+    width: 100%; /* Confirma que ocupan solo el espacio necesario */
+    height: auto; /* Ajusta la altura automáticamente */
+    background-size: cover; /* Cubre el área sin dejar espacios */
+    background: #f0efec url(https://www.puebla.gob.mx/images/pix_dere.jpg) repeat;	
+}
+.header-container{
+  /* background: url(../images/header-1300.jpg) no-repeat ; */
+  background: url(https://www.puebla.gob.mx/templates/dst_puebla_2024/images/Header-logotipo.jpg) no-repeat ;
+  position: relative;
+  background-size: contain;
+	
+  /*Cambios para diseÃ±o 2024*/
+	 max-width: 1400px; /* Ancho mÃ¡ximo de 1600px */
+    width: 100%; /* Ancho flexible para dispositivos pequeÃ±os */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+	/*Fin de cabios*/
+}
+.header-inner{
+	/*height: 224px*/
+	}/*Se cambia para que coincida con el tamaÃ±o de la imagen 2024, se comenta para que coincida y se muestre la imagen*/
+.redes-container{ height: 30px; padding: 10px 0 0; margin-bottom: 15px; opacity: 0.5;}
+.redes-container i{font-size:32px; margin-left: 30px;}
+.redes-container a, .redes-container a:hover{text-decoration: none;}
+ul.menu li{list-style-type: none; display: inline; font:500 14pt 'Corra Montserra'; margin-left: 20px;}
+/*l.menu li, ul.menu li a{color:#fff; }*/
+ul.menu li, ul.menu li a{color:#7e7e7b; }
+.buscador-container{margin-bottom: 10px !important;}
+ul.menu li:hover{border-bottom: -1px solid white;}
+.mobile-menu-icon a span{color:#7e7e7b; margin-top: 10px}
+
+.search-query{background: #eaeaea; border: none; border-radius: 15px;
+  color:#a5a5a5; min-width: 220px; padding: 8px 30px 8px 10px;}
+::-webkit-input-placeholder {color: #a5a5a5; font:500 12px 'Corra Montserra';}
+::-moz-placeholder { color: #a5a5a5; font:500 12px 'Corra Montserra'; }
+:-ms-input-placeholder { color: #a5a5a5; font:500 12px 'Corra Montserra'; }
+:-moz-placeholder { color: #a5a5a5; font:500 12px 'Corra Montserra'; }
+span.magnifier-icon{margin-left: -30px; color:#757575;}
+
+
+/* BotÃ³n rojo */
+.red-button a{
+	/*padding:10px 30px; 
+	border-radius:7px; 
+	background:#c62038; 
+	border:2px solid #c62038;
+	color:#FFF; 
+	font:500 20px 'Corra Montserra'; 
+	transition: all 0.2s ease-in-out;*/
+	margin-top: 20px;
+    border: none;
+    padding: 2px 50px;
+    background: #ffffff;
+    color: #b2b2b1;
+    font-family: 'Corra Montserra';
+    font-size: 16pt;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+	}
+/*.red-button a:hover{background:none; border:2px solid #c62038; color:#c62038; text-decoration: none}*/
+
+/* BotÃ³n blanco */
+.white-button a{padding:9px 17px; background: none;	border:2px solid #fff;
+	color:#FFF;	font:400 14px 'Corra Montserra'; transition: all 0.2s ease-in-out;}
+.white-button a:hover{background:#fff; border:2px solid #fff; color:#5d666a; text-decoration: none}
+
+/* BotÃ³n Sepia */
+.sepia-button a{padding:10px 30px; border-radius:7px; background:#fff; border:2px solid #C19E74;
+	color:#C19E74; font:500 20px 'Corra Montserra'; transition: all 0.2s ease-in-out;}
+.sepia-button a:hover{background:none; border:2px solid #C19E74; color:#fff; text-decoration: none}
+
+/*principal-bottom-custom-title*/
+.principal-bottom-custom-title-container{background: #f5f5f5;}
+
+/*Principal Bottom*/
+.principal-bottom .card{width: 100%;}
+.principal-bottom img{height: 80px;}
+.principal-bottom h4{
+	color: #5D666A;
+	font-weight: 600;
+
+	margin-top: 10px;
+	margin-bottom: 0px;	
+}
+.principal-bottom h5{color: #C62038; font-size: 16px;	margin: 0px;}
+/*.principal-bottom a{
+	display: inline-block;
+	background: none;
+	border: solid 1px #C19E74;
+	color: #C19E74;
+	font-size: 14px;
+	margin: 20px 0px;
+	margin-bottom: 0px;
+	border-radius: 8px;
+	padding: 4px 12px;
+}
+.principal-bottom a:hover{background: #C19E74; text-decoration: none;	color: #FFF; border:1px solid #C19E74;}*/
+
+/*Footer, copyright*/
+.sombra-footer {
+top: 0;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sombra-footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Imagen vertical */
+.sombra-vertical {
+  max-height: 100%;
+  object-fit: contain;
+  top: 0;
+}
+
+/* Imagen horizontal */
+.sombra-horizontal {
+  max-width: 100%;
+  object-fit: contain;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/**Ligas Footer**/
+.sitios_interes a, 
+.sitios_interes a:hover, 
+.sitios_interes a:visited, 
+.sitios_interes a:focus {
+  color: #fffbef;
+  /*font-family: 'Montserrat', Medium;*/
+  font-size: 14pt;
+  /*font-weight: 500;*/
+	line-height: 1.8;
+}
+
+.footer{background: var(--grisFondoFooter);}
+/*.footer-container{padding-top: 20px; padding-bottom: 40px; background:url(../images/footer-bg.png) top right / contain no-repeat}*/
+.footer-border{height: 25px;}
+.copyright-container{margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f8f7f7;}
+.footer-btn{margin-top: 10px !important;}
+
+.footer-left, .footer-right{color:#dedde3;}
+.fl-title{font:700 26px 'Corra Montserra'; line-height: 30px; margin:0}
+.fl-subtitle{font:600 18px 'Corra Montserra'; margin:0 0 5px 0;}
+.fl-text{font:400 15px 'Corra Montserra'; margin: 0; line-height: 15px;}
+.footer-red-btn{margin-top: 40px;}
+.footer-red-btn i{font-size: 40px;font-weight: bold;margin-right: 5px;}
+.footer-red-btn a{padding: 10px; background:#b91237}
+.footer-red-btn a:hover{color:#fff; border:2px solid #fff; background:#3c4145}
+
+.fr-txt-group{margin: 0;height:90px;}
+.fr-title{font:600 35px 'Corra Montserra'; margin-bottom: 25px;}
+.fr-subtitle{font:600 14px 'Corra Montserra'; line-height: 25px; margin:0}
+.fr-subtitle span{border-bottom: 1px solid white;}
+.fr-text{font:400 12px 'Corra Montserra'; margin:5px 0 0 0}
+.fr-text a, .fr-text a:hover{text-decoration: none; color:#dedde3}
+.fr-text a:hover{color:#FFF;}
+
+.cr-title{color:#3c4145; font:600 18px 'Corra Montserra'; margin: 0;}
+.cr-link{padding: 5px 17px; text-decoration: underline; font:500 16px 'Corra Montserra'}
+.cr-link a, .cr-link a:hover{color:#807976}
+
+
+.link--secondary { color: #c19e74; }
+.link--secondary:hover { color: #c19e74; }
+
+/* 
+ *  Colores para textos
+ */
+.c-85543d{ color: #85543d;}
+.c-c19e74{ color: #c19e74;}
+.c-d3b792{ color: #d3b792;}
+.c-821800{ color: #821800;}
+.c-6d0c2a{ color: #6d0c2a;}
+.c-840f31{ color: #840f31;}
+.c-9b1237{ color: #9b1237;}
+.c-9f1c35{ color: #9f1c35;}
+.c-c62038{ color: #c62038;}
+.c-a8123d{ color: #a8123d;}
+.c-3c4145{ color: #3c4145;}
+.c-5d666a{ color: #5d666a;}
+.c-807976{ color: #807976;}
+.c-aeaeae{ color: #aeaeae;}
+.c-dedde2{ color: #dedde2;}
+.c-eaeaed{ color: #eaeaed;}
+.c-f1f1f1{ color: #f1f1f1;}
+.c-636569{ color: #636569;}
+.c-a5987e{ color: #a5987e;}
+.c-6b6b6b{ color: #6b6b6b;}
+.c-fff, .c-ffffff{ color: #ffffff;}
+
+
+/* 
+ *  Colores para textos hover
+ */
+.ch-dedde2{transition: color 100ms;}
+.ch-dedde2:hover{color:#ffffff;}
+ 
+ /* 
+  *  Colores de fondo
+  */
+.bgc-85543d{ background-color: #85543d;}
+.bgc-c19e74{ background-color: #c19e74;}
+.bgc-d3b792{ background-color: #d3b792;}
+.bgc-821800{ background-color: #821800;}
+.bgc-6d0c2a{ background-color: #6d0c2a;}
+.bgc-840f31{ background-color: #840f31;}
+.bgc-9b1237{ background-color: #9b1237;}
+.bgc-9f1c35{ background-color: #9f1c35;}
+.bgc-c62038{ background-color: #c62038;}
+.bgc-3c4145{ background-color: #3c4145;}
+.bgc-5d666a{ background-color: #5d666a;}
+.bgc-807976{ background-color: #807976;}
+.bgc-aeaeae{ background-color: #aeaeae;}
+.bgc-dedde2{ background-color: #dedde2;}
+.bgc-eaeaed{ background-color: #eaeaed;}
+.bgc-f1f1f1{ background-color: #f1f1f1;}
+.bgc-a8123d{ background-color: #a8123d;}
+.bgc-5f1b2d{ background-color: #5f1b2d;}
+
+ /* 
+  *  Colores de fondo hover
+  */
+.bgch-d3b792,
+.bgch-9b1237,
+.bgch-c62038,
+.bgch-dedde2{transition: background-color 300ms;}
+.bgch-d3b792:hover{ background-color: #c19e74;}
+.bgch-9b1237:hover{ background-color: #3c4145;}
+.bgch-c62038:hover{ background-color: #9f1c35;}
+.bgch-dedde2:hover{ background-color: #5d666a;}
+ 
+ /*     
+  *  TamaÃ±os de botones
+  */
+.small-button,
+.medium-button,
+.large-button {display: inline-block;}
+.small-button { /* min-height: 32px; */ font-size: 14px; padding:10px 30px; border-radius: 7px; }
+.medium-button { /* min-height: 40px; */ font-size: 20px; padding:10px 30px; border-radius: 7px; }
+.large-button { /* min-height: 50px; */ font-size: 20px; padding:10px 30px; border-radius: 7px; }
+
+.border-50{border-radius: 50pt;}
+
+.joomla-content{margin-top: 40px; margin-bottom: 40px;}
+.joomla-content h2{margin-bottom: 30px;}
+
+/*Banderas para idiomas*/
+.flags{height:30px;}
+.flag{margin:0 0 0 10px;}
+.flag img{width:25px;}
+.lang-active{transform: scale(1.5);}
+.moduletable_menu ul{
+  padding: 0px;
+  margin-bottom: 18px;
+}
+.image_menu_fb{ height: 20px; color: #7e7e7b; }
+.image_menu_tw{ height: 20px; color: #7e7e7b; }
+.image_menu_yt{ height: 21px; color: #7e7e7b; }
+/*Media queries corresponding to Uikit breakpoints*/
+@media only screen and (max-width:639px){
+  .right-header {
+    margin: 0; /* Elimina márgenes innecesarios */
+    width: 50%; /* Confirma que ocupan solo el espacio necesario */
+    height: auto; /* Ajusta la altura automáticamente */
+    background-size: cover; /* Cubre el área sin dejar espacios */
+   }
+	
+  .body h2, .uk-h2{font-size: 32px;}
+
+  .header{height: 70px;}
+  .header-inner{height: 80px;}
+  .header-container{
+    height: 80px; 
+    background: url(../images/Header-logotipo-CELULAR.jpg) no-repeat ;
+    background-size: cover;
+    position: relative;
+  }
+  .uk-offcanvas-bar h3{text-align: right; padding: 10px 30px;}
+  .uk-offcanvas-bar{background:#3c4145}
+  .menum ul{margin: 0;padding: 0;}
+  .menum ul li{display: block; text-align: right; margin: 0;padding: 8px 20px; background: #f1f1f1; border-bottom: 2px solid #9b1237;}
+  .menum ul li a, .menum ul li a:hover{display: block; color:#85543d}
+  .redes-container{padding: 5px 0 0 0; height: 50px}
+  .redes-container i{margin-left: 15px;}
+  .buscador-container{margin: 5px auto 0 auto !important}
+  .search-query{min-width: 200px}
+  .buscador-container {margin: 0 0 0 auto !important;}
+
+  /*footer*/
+  .fr-txt-group{height: 50px;}
+  .footer-btn{margin-top: 30px !important;}
+  .fr-title{font-size: 33px;margin-top: 35px; text-align: center;}
+  .left-header, .right-header{
+    margin: 0; /* Elimina márgenes innecesarios */
+    width: 50%; /* Confirma que ocupan solo el espacio necesario */
+    height: auto; /* Ajusta la altura automáticamente */
+    background-size: cover; /* Cubre el área sin dejar espacios */
+  }
+  .buscador_mob{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin-top: 10px;
+    /*background: #691b31;*/
+	background: #f0efec;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,.3);
+  }
+}
+
+@media only screen and (min-width:640px) and (max-width:959px){
+	.right-header {
+    margin: 0; /* Elimina márgenes innecesarios */
+    width: 50%; /* Confirma que ocupan solo el espacio necesario */
+    height: auto; /* Ajusta la altura automáticamente */
+    background-size: cover; /* Cubre el área sin dejar espacios */
+   }
+	
+	#buscador-contaner1 {
+      display: none;
+    }
+	
+	#header-img > a > img {
+	  /* Estilos deseados */
+	  width: calc(100% * 5 / 6.001);
+	  
+	}
+	
+ .body h2, .uk-h2{font-size: 38px;}
+  /*menu-buscador-redes*/
+  ul.menu{text-align: right;}
+  ul.menu li { font-size:10px; margin: 0 0 0 10px; }
+  ul.menu li a{white-space: nowrap}
+  .search-query{min-width: 250px}
+
+  /*footer*/
+  .fl-title{font-size: 20px;}
+  .fl-subtitle{font-size: 16px;}
+  .fl-text{font-size: 12px;}
+  .footer-red-btn a{font:300 10px 'Corra Montserra'; padding: 10px 5px;}
+  .footer-red-btn i{font-size:20px; margin-right:3px;}
+
+  .fr-title{font-size: 30px; margin-bottom: 15px;}
+  .fr-subtitle{font-size: 14px}
+  .fr-text{font-size: 10px}
+  .white-button a{font-size: 12px; padding: 6px 14px;}
+  .fr-txt-group{height: 65px;}
+  /*.buscador_mob{
+    display: none; Se comenta para el tamaÃ±o
+  }*/
+}
+
+@media only screen and (min-width : 960px) and (max-width:1199px){
+	#header-img > a > img {
+	  /* Estilos deseados */
+	  width: calc(100% * 5 / 6.001);
+	  
+	}
+	
+	.header {
+      height: inherit;
+    }
+	
+    .header-container{
+      background: url(../images/Header-logotipo-TABLETA.jpg) no-repeat ;
+      /*background-position-x: -40px;*/
+	  background-size: contain;
+	  
+    }
+	
+	.header-inner {
+     
+      height: inherit;
+    }
+    /*menu-buscador-redes*/
+    ul.menu li { font-size:15px; margin: 0 0 0 15px; }
+    ul.menu li a{white-space: nowrap}
+
+    /*footer*/
+    .footer-red-btn a{font:500 16px 'Corra Montserra'}
+    .footer-red-btn i{font-size:20px ;}
+
+    .fr-subtitle{font-size: 12px}
+    .fr-text{font-size: 10px}
+    .white-button a{font-size: 13px; padding: 7px 15px;}
+}
+@media only screen and (min-width : 1200px){}
+@media only screen and (min-width : 1600px){}
+
